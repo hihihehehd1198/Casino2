@@ -1,0 +1,295 @@
+<div class="container-fluid app-background-item">
+  <div class="row container__item">
+    <!-- <div class="col-lg-2 container__image"></div> -->
+
+    <div class="col-xs-0 col-sm-3 col-md-3 col-lg-2 container__image" style="width:192px !important"
+      id="img-background" [style.background]="bgColor">
+      <img src="{{ linkimg }}" />
+    </div>
+
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10 container__content">
+
+
+
+
+      <div class="container">
+        <div class="row">
+          <div class="container-fluid background-item">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="background-grid">
+                  <div class="grid-container grid-background-item">
+                    <!-- <div class="grid-title-line"></div> -->
+                    <div class="grid-item item1">
+                      <div class="container-fluid">
+                        <div class="row item-title">
+                          <div class="row-item-header item-title-name">
+                            <div class="mini-image-item">
+                              <img src="{{ linkimg }}" style="width: 100%;height:100%;border-radius: 10px;" id="img" />
+                              <!-- mini image when responsive mobile -->
+                            </div>
+
+
+                            <span style="color: blue"># {{ CasinoItems.id }}</span>
+                            - {{ CasinoItems.Name }}
+                          </div>
+                          <div class="row-item-header item-title">
+                            <div class="div--content__statusItemPoint">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                  <path
+                                    d="M14.625 0H3.375C2.97718 0 2.59564 0.158035 2.31434 0.43934C2.03304 0.720644 1.875 1.10218 1.875 1.5V16.5C1.87506 16.7697 1.94783 17.0344 2.08565 17.2662C2.22347 17.498 2.42123 17.6884 2.65813 17.8173C2.89502 17.9461 3.16229 18.0088 3.43178 17.9986C3.70128 17.9884 3.96303 17.9057 4.1895 17.7593L8.898 14.7128C8.92834 14.693 8.96378 14.6824 9 14.6824C9.03622 14.6824 9.07166 14.693 9.102 14.7128L13.8097 17.7585C14.0362 17.9051 14.2979 17.9879 14.5675 17.9983C14.837 18.0086 15.1044 17.9461 15.3414 17.8173C15.5784 17.6884 15.7762 17.4981 15.9141 17.2663C16.052 17.0345 16.1249 16.7697 16.125 16.5V1.5C16.125 1.10218 15.967 0.720644 15.6857 0.43934C15.4044 0.158035 15.0228 0 14.625 0V0ZM11.5958 10.1318C11.6178 10.1823 11.6234 10.2385 11.6117 10.2925C11.6 10.3464 11.5717 10.3953 11.5308 10.4322C11.4899 10.4692 11.4383 10.4924 11.3835 10.4985C11.3287 10.5046 11.2733 10.4933 11.2253 10.4662L9.0915 9.26625C9.06347 9.25041 9.03182 9.24209 8.99963 9.24209C8.96743 9.24209 8.93578 9.25041 8.90775 9.26625L6.77475 10.4662C6.72668 10.4933 6.67132 10.5046 6.61649 10.4985C6.56167 10.4924 6.51014 10.4692 6.4692 10.4322C6.42825 10.3953 6.39995 10.3464 6.3883 10.2925C6.37665 10.2385 6.38223 10.1823 6.40425 10.1318L7.284 8.10675C7.29956 8.07055 7.30338 8.03038 7.2949 7.99189C7.28642 7.95341 7.26608 7.91856 7.23675 7.89225L5.72775 6.549C5.68795 6.51352 5.65987 6.4668 5.64721 6.41501C5.63455 6.36322 5.63791 6.3088 5.65686 6.25897C5.6758 6.20913 5.70943 6.16622 5.75329 6.13592C5.79715 6.10561 5.84919 6.08934 5.9025 6.08925H7.695C7.73168 6.08931 7.76757 6.07862 7.79823 6.05849C7.82889 6.03836 7.85298 6.00968 7.8675 5.976L8.7585 3.909C8.77893 3.86192 8.81267 3.82184 8.85557 3.79368C8.89848 3.76553 8.94868 3.75053 9 3.75053C9.05132 3.75053 9.10152 3.76553 9.14443 3.79368C9.18733 3.82184 9.22107 3.86192 9.2415 3.909L10.1325 5.976C10.147 6.00968 10.1711 6.03836 10.2018 6.05849C10.2324 6.07862 10.2683 6.08931 10.305 6.08925H12.0975C12.1508 6.08934 12.2028 6.10561 12.2467 6.13592C12.2906 6.16622 12.3242 6.20913 12.3431 6.25897C12.3621 6.3088 12.3655 6.36322 12.3528 6.41501C12.3401 6.4668 12.312 6.51352 12.2723 6.549L10.7633 7.893C10.7339 7.91931 10.7136 7.95416 10.7051 7.99264C10.6966 8.03113 10.7004 8.0713 10.716 8.1075L11.5958 10.1318Z"
+                                    fill="white" />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0">
+                                    <rect width="18" height="18" fill="white" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                              <span class="featured-text"> Featured</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item item2">
+                      <div class="item2-child" [style.background]="
+                          CasinoItems.StatusPoint ? 'greenyellow' : 'red'
+                        ">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M17.5245 14.8245L15.2745 10.9395C15.2576 10.9103 15.2332 10.8861 15.2038 10.8697C15.1744 10.8532 15.1411 10.8449 15.1074 10.8458C15.0737 10.8466 15.0409 10.8565 15.0123 10.8745C14.9838 10.8924 14.9606 10.9177 14.9452 10.9477C14.6435 11.5415 14.1786 12.0368 13.605 12.3753C13.0314 12.7138 12.3731 12.8815 11.7075 12.8587C11.6808 12.8577 11.6542 12.8623 11.6295 12.8724C11.6048 12.8825 11.5825 12.8978 11.5642 12.9172C11.3508 13.1406 11.1078 13.3336 10.842 13.491C10.7999 13.5166 10.7695 13.5578 10.7575 13.6056C10.7454 13.6535 10.7526 13.7041 10.7775 13.7467L12.984 17.4802C13.0565 17.6024 13.1623 17.7014 13.2889 17.7658C13.4156 17.8302 13.5579 17.8573 13.6994 17.8439C13.8408 17.8306 13.9755 17.7773 14.0879 17.6903C14.2002 17.6034 14.2856 17.4863 14.334 17.3527L14.958 15.6367L16.752 15.9405C16.8924 15.9641 17.0367 15.9473 17.1679 15.8919C17.2991 15.8366 17.4119 15.7451 17.493 15.628C17.5741 15.511 17.6202 15.3732 17.6259 15.2309C17.6316 15.0886 17.5967 14.9476 17.5252 14.8245H17.5245Z"
+                            fill="white" />
+                          <path
+                            d="M6.43723 12.918C6.41892 12.8986 6.39666 12.8833 6.37195 12.8732C6.34724 12.8631 6.32066 12.8584 6.29398 12.8595C5.62844 12.8823 4.97019 12.7148 4.39654 12.3766C3.82289 12.0383 3.35766 11.5434 3.05548 10.95C3.04007 10.9201 3.01691 10.8948 2.98842 10.8769C2.95993 10.8589 2.92714 10.849 2.89348 10.848C2.85971 10.8469 2.82627 10.855 2.79679 10.8716C2.76731 10.8881 2.74291 10.9124 2.72623 10.9418L0.476235 14.8275C0.404909 14.9507 0.370131 15.0917 0.375966 15.234C0.381801 15.3762 0.428007 15.5139 0.509184 15.6308C0.590362 15.7478 0.703156 15.8393 0.834382 15.8945C0.965609 15.9497 1.10985 15.9665 1.25023 15.9428L3.04348 15.639L3.66823 17.3558C3.71688 17.4892 3.80242 17.6061 3.91489 17.6928C4.02737 17.7795 4.16216 17.8326 4.30359 17.8457C4.44502 17.8588 4.58726 17.8315 4.71378 17.7669C4.84029 17.7024 4.94587 17.6032 5.01823 17.481L7.22398 13.749C7.24888 13.7064 7.25607 13.6558 7.24401 13.6079C7.23195 13.5601 7.2016 13.5189 7.15948 13.4933C6.89379 13.3351 6.65082 13.1416 6.43723 12.918Z"
+                            fill="white" />
+                          <path
+                            d="M10.5 7.65454C10.6989 7.65454 10.8897 7.57552 11.0303 7.43487C11.171 7.29422 11.25 7.10345 11.25 6.90454V6.15454C11.25 5.95563 11.171 5.76486 11.0303 5.62421C10.8897 5.48356 10.6989 5.40454 10.5 5.40454C10.3011 5.40454 10.1103 5.48356 9.96967 5.62421C9.82902 5.76486 9.75 5.95563 9.75 6.15454V6.90454C9.75 7.10345 9.82902 7.29422 9.96967 7.43487C10.1103 7.57552 10.3011 7.65454 10.5 7.65454Z"
+                            fill="white" />
+                          <path
+                            d="M11.1097 11.6251C11.5248 11.7565 11.9679 11.7715 12.3908 11.6683C12.8138 11.5651 13.2002 11.3477 13.5081 11.0399C13.8159 10.7321 14.0333 10.3456 14.1365 9.92268C14.2396 9.49975 14.2247 9.0566 14.0932 8.64159C14.4795 8.44103 14.8033 8.13826 15.0293 7.76629C15.2553 7.39433 15.3748 6.96745 15.3748 6.53221C15.3748 6.09698 15.2553 5.6701 15.0293 5.29813C14.8033 4.92616 14.4795 4.62339 14.0932 4.42284C14.2247 4.00782 14.2396 3.56467 14.1365 3.14174C14.0333 2.71881 13.8159 2.33235 13.5081 2.02452C13.2002 1.71669 12.8138 1.49932 12.3908 1.39613C11.9679 1.29293 11.5248 1.30788 11.1097 1.43934C10.9091 1.0529 10.6063 0.72897 10.2342 0.502881C9.86206 0.276792 9.43502 0.157227 8.99962 0.157227C8.56422 0.157227 8.13717 0.276792 7.76507 0.502881C7.39297 0.72897 7.0901 1.0529 6.88949 1.43934C6.47471 1.30811 6.03187 1.29325 5.60922 1.39637C5.18658 1.49949 4.80034 1.71663 4.4926 2.02414C4.18486 2.33164 3.96743 2.71772 3.86399 3.14028C3.76055 3.56285 3.77508 4.00571 3.90599 4.42059C3.51972 4.62114 3.19594 4.92391 2.96995 5.29588C2.74396 5.66785 2.62445 6.09473 2.62445 6.52996C2.62445 6.9652 2.74396 7.39208 2.96995 7.76404C3.19594 8.13601 3.51972 8.43878 3.90599 8.63934C3.77391 9.05456 3.75852 9.49811 3.86149 9.9215C3.96447 10.3449 4.18185 10.7318 4.48988 11.04C4.79791 11.3482 5.18473 11.5658 5.60806 11.6689C6.0314 11.7721 6.47495 11.757 6.89024 11.6251C7.09073 12.0116 7.39352 12.3355 7.76557 12.5616C8.13761 12.7878 8.56462 12.9074 8.99999 12.9074C9.43537 12.9074 9.86238 12.7878 10.2344 12.5616C10.6065 12.3355 10.9093 12.0116 11.1097 11.6251ZM6.74999 8.40459C6.65054 8.40459 6.55515 8.36508 6.48483 8.29475C6.4145 8.22443 6.37499 8.12904 6.37499 8.02959C6.37499 7.93013 6.4145 7.83475 6.48483 7.76442C6.55515 7.6941 6.65054 7.65459 6.74999 7.65459H7.12499V5.40459L6.64499 5.76459C6.56543 5.82426 6.46542 5.84988 6.36696 5.83582C6.2685 5.82175 6.17967 5.76915 6.11999 5.68959C6.06032 5.61002 6.0347 5.51001 6.04876 5.41155C6.06283 5.3131 6.11543 5.22426 6.19499 5.16459L6.67499 4.80459C6.78636 4.72032 6.91917 4.66904 7.05826 4.65657C7.19736 4.64411 7.33717 4.67097 7.46174 4.73409C7.58602 4.79654 7.69049 4.89232 7.76347 5.01072C7.83645 5.12913 7.87506 5.2655 7.87499 5.40459V7.65459H8.24999C8.34945 7.65459 8.44483 7.6941 8.51516 7.76442C8.58549 7.83475 8.62499 7.93013 8.62499 8.02959C8.62499 8.12904 8.58549 8.22443 8.51516 8.29475C8.44483 8.36508 8.34945 8.40459 8.24999 8.40459H6.74999ZM8.99999 6.15459C8.99999 5.75676 9.15803 5.37523 9.43933 5.09393C9.72064 4.81262 10.1022 4.65459 10.5 4.65459C10.8978 4.65459 11.2793 4.81262 11.5607 5.09393C11.842 5.37523 12 5.75676 12 6.15459V6.90459C12 7.30241 11.842 7.68394 11.5607 7.96525C11.2793 8.24655 10.8978 8.40459 10.5 8.40459C10.1022 8.40459 9.72064 8.24655 9.43933 7.96525C9.15803 7.68394 8.99999 7.30241 8.99999 6.90459V6.15459Z"
+                            fill="white" />
+                        </svg>
+                        <span>{{ CasinoItems.PerfectPoint }}/10</span>
+                      </div>
+                      <div class="item2-child">
+                        <span style="padding-right: 3px" [style.color]="
+                            CasinoItems.StatusPoint ? 'greenyellow' : 'red'
+                          ">{{
+                          CasinoItems.StatusPoint ? "Perfect" : "Bad"
+                          }}</span>
+                        Reputation
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M7 0C3.15 0 0 3.15 0 7C0 10.85 3.15 14 7 14C10.85 14 14 10.85 14 7C14 3.15 10.85 0 7 0ZM7.875 10.5H6.125V6.125H7.875V10.5ZM7 5.25C6.475 5.25 6.125 4.9 6.125 4.375C6.125 3.85 6.475 3.5 7 3.5C7.525 3.5 7.875 3.85 7.875 4.375C7.875 4.9 7.525 5.25 7 5.25Z"
+                            fill="#1E60E1" />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="grid-item item3">
+                      <div class="container">
+                        <div class="row                               item-content-info-background">
+                          <div class="
+                              col-sm-7 col-md-7 col-lg-7
+
+                            ">
+                            <ul class="item-content-info">
+                              <li>
+                                <!-- icon location -->
+                                <div class="status-icon">
+                                  <i *ngIf="CasinoItems.CheckStatusLocation" class="fas fa-check"
+                                    style="color: #76c344"></i>
+                                  <i *ngIf="!CasinoItems.CheckStatusLocation" class="fas fa-times"
+                                    style="color: red"></i>
+                                </div>
+                                <!-- icon location -->
+
+                                <div class="status-icon">
+                                  <!-- <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M-1.49994 0H25.5001V18H-1.49994V0Z" fill="#EC0015" />
+                                      <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.2903 13.3964L12.1412 11.0447L9.00744 13.4195L10.1729 9.56038L7.04498 7.17735L10.915 7.14413L12.1153 3.29663L13.3413 7.13534L17.2113 7.1404L14.0994 9.5459L15.2906 13.3966L15.2903 13.3964Z"
+                                        fill="#FFFF00" />
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0">
+                                        <rect width="24" height="18" fill="white" />
+                                      </clipPath>
+                                    </defs>
+                                  </svg> -->
+
+
+
+                                  <img src="{{link_icon}}">
+                                  &nbsp;
+
+
+
+                                </div>
+                                {{ CasinoItems.LocationName }}
+                              </li>
+
+                              <li>
+                                <!-- icon location -->
+                                <div class="status-icon">
+                                  <i *ngIf="CasinoItems.CheckStatusWeb" class="fas fa-check" style="color: #76c344"></i>
+                                  <i *ngIf="!CasinoItems.CheckStatusWeb" class="fas fa-times" style="color: red"></i>
+                                </div>
+                                <!-- icon location -->
+
+                                <div class="status-icon">
+                                  <img src="{{link_icon}}">
+                                  &nbsp;
+                                </div>
+                                {{ CasinoItems.WebName }}
+                              </li>
+
+                              <li>
+                                <!-- icon location -->
+                                <div class="status-icon">
+                                  <i *ngIf="CasinoItems.CheckStatusCustomer" class="fas fa-check"
+                                    style="color: #76c344"></i>
+                                  <i *ngIf="!CasinoItems.CheckStatusCustomer" class="fas fa-times"
+                                    style="color: red"></i>
+                                </div>
+                                <!-- icon location -->
+
+                                <div class="status-icon">
+                                  <img src="{{link_icon}}">
+                                  &nbsp;
+                                </div>
+                                {{ CasinoItems.SupportName }}
+                              </li>
+
+                              <li>
+                                <!-- icon location -->
+                                <div class="status-icon">
+                                  <i *ngIf="CasinoItems.CheckStatusLivechat" class="fas fa-check"
+                                    style="color: #76c344"></i>
+                                  <i *ngIf="!CasinoItems.CheckStatusLivechat" class="fas fa-times"
+                                    style="color: red"></i>
+                                </div>
+                                <!-- icon location -->
+
+                                <div class="status-icon">
+                                  <img src="{{link_icon}}">
+                                  &nbsp;
+                                </div>
+                                {{CasinoItems.CheckStatusLivechat? 'LiveChat':'Not LiveChat'}}
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="col-lg-5" style="padding: 0">
+                            <ul class="item-content-info1">
+                              <li>{{CasinoItems.GameCount}} Game Providers</li>
+                              <li>{{CasinoItems.PaymentCount}} Payment Methods</li>
+                              <li>{{CasinoItems.LicenseCount}}</li>
+                              <li>
+                                {{ CasinoItems.VpnStatus ? 'VPN Allowed':'Not VPN Allowed' }}
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item item4">
+                      <div class="grid-item-item4-background-bonus" [style.border-color]="
+                          CasinoItems.BonusStatus ? '#f6bf31' : '#e8317e'
+                        ">
+                        <div class="bonus-icon" [style.background-color]="
+                            CasinoItems.BonusStatus ? '#f6bf31' : '#e8317e'
+                          ">
+                          <i class="fas fa-gift" style="color: white"></i>
+                        </div>
+                        <div class="bonus-status-text" [class]="
+                            CasinoItems.BonusStatus
+                              ? 'bonus-status-text1'
+                              : 'bonus-status-text2'
+                          ">
+                          {{ CasinoItems.BonusStatus ? "bonus" : "exclusive" }}
+                        </div>
+                        <div class="bonus-main">
+                          <span [style.color]="
+                              CasinoItems.BonusStatus ? '#E8317E' : '#0C1245'
+                            ">121% up to $500 and 200 extra spins
+                          </span>
+                          <br />
+                          <a href="#" style="color: #1e60e1">T&C’s Apply</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="grid-item item5">
+                      <div class="container">
+                        <div class="row btn__list-item">
+                          <div class="col-lg-4 col-4 col-md-4 col-sm-4 col-xs-4">
+                            <button type="button" class="btn btn-primary">
+                              visit casino
+                            </button>
+                          </div>
+                          <div class="col-lg-4 col-4 col-md-4 col-sm-4 col-xs-4">
+                            <button type="button" class="btn btn-primary">
+                              review
+                            </button>
+                          </div>
+                          <div class="col-lg-4 col-4 col-md-4 col-sm-4 col-xs-4">
+                            <button type="button" class="btn btn-primary btn__last-item" (click)="ShowDetailItem()">
+                              more <span class="detail-button">detail</span>
+                              &nbsp;
+                              <i class="fas fa-chevron-up"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid contanier-detail-background" *ngIf="detailStatus">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="container-detail">
+                    <i class="fas fa-info-circle" style="color: #1e60e1; font-size: 25px"></i>
+                    &nbsp; Why play here?
+                  </div>
+                  <div class="container-detail">
+                    <ul>
+                      <li>Large selection of games from multiple suppliers</li>
+                      <li>Mobile & live casino supported</li>
+                      <li>24/7 support via live chat and email</li>
+                      <li>Licensed in UK</li>
+                      <li>Large online progressive slots</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="container-detail">
+                    <i class="fas fa-gift" style="color: #1e60e1; font-size: 25px; margin-right: 5px"></i>
+                    &nbsp; Bonus Details
+                  </div>
+                  <div class="container-detail">
+                    <li>Maximum First Deposit Bonus: up to $50</li>
+                    <li>Bonus Match: 200% match on first deposit</li>
+                    <li>Minimum Deposit Amount: $20</li>
+                    <li>Wager Requirement: 25</li>
+                    <li>Times Bonus Excluded in Wager Requirement: No</li>
+                    <li>Deposit Bonus: +$20 Free Spins</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

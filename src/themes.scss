@@ -1,0 +1,15 @@
+@import "~@nebular/theme/styles/theming";
+@import "~@nebular/theme/styles/themes/default";
+
+$nb-enable-css-custom-properties: true; // <-- enable css custom properties
+
+$nb-themes: nb-register-theme(
+  (
+    // your theme
+    // text-basic-color: color-basic-800,
+    // text-disabled-color: color-basic-600
+    sidebar-padding: 0px
+  ),
+  default,
+  default
+);

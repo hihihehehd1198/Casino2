@@ -1,0 +1,97 @@
+.container {
+  //   border: 1px solid red;
+  width: 100% !important;
+}
+
+.page {
+  margin: 10px;
+}
+
+.container .button-menu {
+  width: 100% !important;
+  border-bottom: 1px solid #0c1245;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+
+  border-top: 1px solid #0c1245;
+  padding: 1em 0;
+  background: none;
+  border: 1px solid none !important;
+  outline: 0 !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@keyframes showlistitem {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sidenav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px 70px 10px !important;
+}
+
+.button-list-menu ul li {
+  list-style-type: none;
+  padding: 10px;
+  
+}
+.button-list-menu {
+  padding: 20px 0px;
+  animation: showlistitem 1s ease-in-out;
+}
+
+//menu
+
+.links {
+  background: linear-gradient(180deg, #193387 0%, #0b1144 100%);
+
+  border-bottom: 1px solid #0003;
+  box-shadow: 0 0 32px #0003;
+  font-size: 2em;
+  font-weight: 300;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.links > a {
+  color: #9ab;
+  padding: 0.75em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.links > a:hover {
+  background: #ffffff06;
+  color: #adf;
+}
+.links > .line {
+  background: #68a;
+  height: 1px;
+  pointer-events: none;
+}
+
+/* The Magic */
+
+.icon-toggle {
+  width: 20px;
+  height: 20px;
+  // background-color: Red;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.rotated {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
