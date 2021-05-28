@@ -1,0 +1,28 @@
+{
+  "targets": {
+    "testfirebase-dbead": {
+      "hosting": {
+        "Casino2": [
+          "testfirebase-dbead"
+        ]
+      }
+    },
+    "testfirebase1-ddd0c": {
+      "hosting": {
+        "Casino2": [
+          "testfirebase1-ddd0c"
+        ]
+      }
+    },
+    "testdeploy-da922": {
+      "hosting": {
+        "Casino2": [
+          "testdeploy-da922"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "testfirebase-dbead"
+  }
+}

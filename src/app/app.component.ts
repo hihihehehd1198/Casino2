@@ -2,6 +2,7 @@ import { CasinoServiceService } from './Service/casino-service.service';
 import { CasinoItems } from './model/CasinoItem';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,12 +12,26 @@ export class AppComponent implements OnInit {
   p: number = 1;
   title = 'Casino2';
   constructor(public CasinoServiceService: CasinoServiceService) {
-    console.log("component work !");
-    this.CasinoServiceService.getListCasino().subscribe((data) => {
-      console.log(data);
+    console.log('-------------------------------');
+    console.log('component work !');
+
+    // console.log('call firebase database ');
+    // this.CasinoServiceService.getDatabaseFirebase();
+    // console.log('-------------------------------');
+    // this.CasinoServiceService.getListCasino().subscribe((data) => {
+    //   // console.log(data);
+    //   this.Casinodata = data;
+    //   this.LoadData();
+    //   this.itemsPageCount = 5;
+    //   this.CountOfAll = this.ListDataCasino.length;
+    // });
+
+    this.CasinoServiceService.getDatabaseFirebase().subscribe((data) => {
+      // console.log(data);
+      console.log('firebase data realtime:');
       this.Casinodata = data;
       this.LoadData();
-      this.itemsPageCount=5;
+      this.itemsPageCount = 5;
       this.CountOfAll = this.ListDataCasino.length;
     });
   }
@@ -31,15 +46,18 @@ export class AppComponent implements OnInit {
     this.checkstyle3 = false;
     this.checkstyle4 = false;
     console.log(this.ListDataCasino);
-    this.ListDataCasino = this.CasinodataBasic.filter((obj:any) => obj.Type == 1);
-
+    this.ListDataCasino = this.CasinodataBasic.filter(
+      (obj: any) => obj.Type == 1
+    );
   }
   ToogleClickMenuButton2() {
     this.checkstyle2 = true;
     this.checkstyle1 = false;
     this.checkstyle3 = false;
     this.checkstyle4 = false;
-    this.ListDataCasino = this.CasinodataBasic.filter((obj:any) => obj.Type == 2);
+    this.ListDataCasino = this.CasinodataBasic.filter(
+      (obj: any) => obj.Type == 2
+    );
 
     console.log(this.ListDataCasino);
   }
@@ -50,7 +68,9 @@ export class AppComponent implements OnInit {
     this.checkstyle4 = false;
     // this.ListDataCasino= this.ListDataCasino.
 
-    this.ListDataCasino = this.CasinodataBasic.filter((obj:any) => obj.Type == 3);
+    this.ListDataCasino = this.CasinodataBasic.filter(
+      (obj: any) => obj.Type == 3
+    );
 
     console.log(this.ListDataCasino);
   }
@@ -65,7 +85,7 @@ export class AppComponent implements OnInit {
   }
   statusParagraph = false;
   isClicked = false;
-  itemsPageCount? :number;
+  itemsPageCount?: number;
   toggleStatus() {
     this.statusParagraph = !this.statusParagraph;
     this.isClicked = !this.isClicked;
@@ -73,7 +93,7 @@ export class AppComponent implements OnInit {
   }
 
   Casinodata: any;
-  CasinodataBasic : any;
+  CasinodataBasic: any;
   //status hide show item with filter
   StatusFilterItem = true;
   //render json as list
@@ -96,43 +116,29 @@ export class AppComponent implements OnInit {
 
   CountOfAll = 0;
   StatusSideBar = true;
-  ShowMoreItem()
-  {
-    if(this.itemsPageCount! > this.ListDataCasino.length)
-    {
+  ShowMoreItem() {
+    if (this.itemsPageCount! > this.ListDataCasino.length) {
       alert('da hien het so ban ghi !');
-    }
-    else
-    this.itemsPageCount = this.itemsPageCount!+10;
+    } else this.itemsPageCount = this.itemsPageCount! + 10;
     // if(this.itemsPageCount+10 > this.ListDataCasino.length)
     // {
     //   alert('da hien het so ban ghi !');
     // }
   }
-  getIndexRecord(num:string)
-  {
+  getIndexRecord(num: string) {
     var output = Number.parseInt(num);
-    if(output>this.ListDataCasino.length)
-    {
-      return this.ListDataCasino.length
-    }
-    else
-    {
+    if (output > this.ListDataCasino.length) {
+      return this.ListDataCasino.length;
+    } else {
       return output;
     }
   }
-  getIndexStart(num:number)
-  {
-    if(num> this.ListDataCasino.length)
-    {
+  getIndexStart(num: number) {
+    if (num > this.ListDataCasino.length) {
       return this.ListDataCasino.length;
-    }
-    else
-    {
+    } else {
       return num;
     }
   }
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 }
